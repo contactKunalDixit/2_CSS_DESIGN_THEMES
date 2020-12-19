@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image_Carousel</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <!-- Note: never use png: USE JPEG/ JPG for image carousels -->
+
+  <!-- PNG to be used for logos only -->
+
+  <body>
+    <div class="carousel">
+      <div class="image-container" id="imgs">
+        <img
+          src="./guille-sanchez-9nxrdT2SMCg-unsplash.jpg"
+          alt="img1"
+          class="selected"
+        />
+        <img src="./Banner 2.jpeg" alt="img2" />
+        <img src="./Banner 3.jpeg" alt="img3" />
+        <img src="./banner6.jpg" alt="img4" />
+      </div>
+
+      <div class="buttons-container">
+        <button class="btn" id="left">Prev</button>
+        <button class="btn" id="right">Next</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

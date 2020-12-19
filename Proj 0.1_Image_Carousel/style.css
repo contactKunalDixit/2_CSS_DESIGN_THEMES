@@ -1,0 +1,70 @@
+@import url('../css_Basic_Boiler_Plate.css');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+
+  /* flex-direction: column; */
+  /* Defining the main axis */
+
+  align-items: center;
+  /* cross axis - center */
+
+  justify-content: center;
+  /* main axis -  center */
+
+  height: 100vh;
+  /* overflow: hidden; */
+  margin: 0;
+}
+
+img {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+}
+
+.carousel {
+  /* background-color: aqua; */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+
+  height: 530px;
+  /* 530 is 500+30 (30 here accounts for the height of the buttons)    */
+
+  width: 500px;
+  /* Same as width of the images */
+
+  overflow: hidden;
+}
+
+.image-container {
+  display: flex;
+
+  transform: translateX(0);
+  /* slide functionality: to move the image on x axis ; The value of translate is changed through javascript */
+
+  transition: transform 0.5s ease-in-out;
+  /* transition applies on transform for animation */
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  background-color: rebeccapurple;
+  border: none;
+  color: white;
+  padding: 0.5rem;
+  cursor: pointer;
+  width: 49.5%;
+}
+
+.btn:hover {
+  opacity: 0.7;
+}
+
+.btn:focus {
+  outline: none;
+}
